@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/historialPedidoClientes.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" name="search" placeholder="Buscar artículo">
+        <select name="category">            
+            <option value="">Categorías</option>                
+        </select>
+        <a href="catalogoProducto.html" class="search-button">Buscar</a>
+    </div>
+
+    <div class="account">
+        <button>Acceder</button>
+        <div class="cart">
+            <img src="img/carrito.png" alt="Carrito">
+        </div>
+    </div>
+</header>
+
+<main>
+    <h1>Listado de Pedidos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha del Pedido</th>
+                <th>Cliente</th>
+                <th>Total del Pedido</th>
+                <th>Productos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>22/09/2024</td>
+                <td>Andrea Soto</td>
+                <td>320 Bs</td>
+                <td>2 Producto, 1 Producto</td>
+                <td><a href="#" class="detail-button">Ver Detalle</a></td>
+            </tr>
+            <tr>
+                <td>23/09/2024</td>
+                <td>Andrea Soto</td>
+                <td>220 Bs</td>
+                <td>1 Producto, 1 Producto</td>
+                <td><a href="#" class="detail-button">Ver Detalle</a></td>
+            </tr>
+        </tbody>
+    </table>
+</main>

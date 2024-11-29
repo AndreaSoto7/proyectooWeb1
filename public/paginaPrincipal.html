@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Página Principal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Book</h1>
+        </div>
+        <div class="search">
+            <input type="text" name="search" placeholder="Buscar artículo">
+            <select name="category">            
+                <option value="">Categorías</option>                
+            </select>
+            <a href="catalogoProducto.html" class="search-button">Buscar</a>
+        </div>
+        <div class="account">
+            <div class="cart">
+                <img src="img/carrito.png" alt="Carrito">
+                <span class="cart-count">0</span> <!-- Contador dinámico -->
+            </div> 
+        </div>
+    </header>
+
+    <section class="carousel">
+        <h2>Explora nuestros libros</h2>
+        <div class="carousel-items">
+            <!-- Los productos del carrusel se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Productos Destacados:</h2>
+        <div class="product-grid">
+            <!-- Los productos destacados se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Book Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/categories.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/featured-products.js"></script>
+    <script src="js/cart.js"></script> <!-- Incluye cart.js -->
+    <script src="js/principalCart.js"></script> <!-- Nuevo archivo JS -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Book</title>
+    <link rel="stylesheet" href="css/registrar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Te damos la bienvenida a <span class="highlight">Book</span></h1>
+            <p>Encuentra el libro que necesitas</p>
+            <h2>CREA TU CUENTA</h2>
+            <form>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" placeholder="Correo electrónico" required>
+                
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Contraseña" required>
+                
+                <label for="nit">NIT</label>
+                <input type="text" id="nit" placeholder="NIT" required>
+                
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" placeholder="Dirección" required>
+                
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+            <p class="redirect-login">¿Ya tienes una cuenta? 
+                <a href="iniciarSesion.html" class="login-link">Inicia sesión</a>
+            </p>
+            </div>
+    </div>
+    <script src="js/registrar.js"></script>
+</body>
+</html>

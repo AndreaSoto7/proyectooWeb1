@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Categorías - Book Store</title>
+    <link rel="stylesheet" href="css/listaProducto.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Book Store</h1>
+        </div>
+        <div class="account">
+            <button id="admin-btn">Administrador</button>
+            <button id="products-btn">Ver Productos</button>
+        </div>        
+    </header>
+    
+
+<main>
+    <h1>Gestionar Categorías</h1>
+    <button id="add-category-btn" class="add-product-btn">Agregar Categoría</button>
+
+    <!-- Formulario para agregar/editar una categoría -->
+    <div id="add-category-form" class="hidden">
+        <h2 id="category-form-title">Agregar Categoría</h2>
+        <form id="category-form">
+            <input type="hidden" id="category-id">
+            <div class="form-group">
+                <label for="category-name">Nombre de la Categoría:</label>
+                <input type="text" id="category-name" placeholder="Ingrese el nombre de la categoría" required>
+            </div>
+            <div class="form-group">
+                <label for="category-description">Descripción:</label>
+                <textarea id="category-description" placeholder="Ingrese la descripción"></textarea>
+            </div>
+            <button type="submit" class="save-btn">Guardar</button>
+            <button type="button" class="cancel-category-btn">Cancelar</button>
+        </form>
+    </div>
+
+    <!-- Tabla de categorías -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de la Categoría</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="category-list">
+            <!-- Categorías se cargarán dinámicamente -->
+        </tbody>
+    </table>
+</main>
+
+<script src="js/gestionarCategoria.js"></script>
+
+</body>
+</html>

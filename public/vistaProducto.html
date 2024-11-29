@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/vistaProducto.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Buscar artículo">
+        <select>
+            <option value="all">Categorías</option>
+        </select>
+        <button>Buscar</button>
+    </div>
+
+    <div class="account">
+        <button>Acceder</button>
+        <div class="cart">
+            <img src="img/carrito.png" alt="Carrito">
+            <span class="cart-count">0</span> <!-- Contador dinámico -->
+        </div>   
+    </div>
+</header>
+<main>
+    <h2>Hábitos Atómicos</h2>
+    <div class="product-details">
+        <div class="product-info">
+            <h3>Autor: James Clear</h3>
+            <p>
+                ¿Te gustaría transformar tu vida con pequeños cambios que marcan una gran diferencia? 
+                "Hábitos Atómicos" es el libro que necesitas para lograrlo. 
+                James Clear, experto en hábitos y comportamiento humano, te enseña cómo pequeños ajustes 
+                diarios pueden llevarte a resultados extraordinarios en todas las áreas de tu vida: salud, 
+                productividad, relaciones y más.
+            </p>
+            <p>
+                A través de principios simples y accesibles, Clear te guía paso a paso en la creación de hábitos 
+                positivos, mientras elimina aquellos que te frenan. Aprenderás a diseñar un entorno para hacer 
+                el éxito inevitable, a desarrollar la disciplina que necesitas para mantener el enfoque, y a 
+                aprovechar el poder de los "hábitos atómicos", pequeños pero poderosos, que generan un cambio 
+                imparable.
+            </p>
+            <h3>Precio: 100 Bs</h3>
+            <p><strong>Cantidad:</strong></p>
+            <input type="number" value="1" min="1" max="3">
+            <p>3 disponibles</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+        <div class="product-image">
+            <img src="img/image1.png" alt="Hábitos Atómicos">
+        </div>
+    </div>
+</main>
+<footer>
+    <p>© 2024 Book Store. Todos los derechos reservados.</p>
+</footer>
+<script src="js/cart.js"></script>
+<script src="js/product-detail.js"></script>
+</body>
+</html>

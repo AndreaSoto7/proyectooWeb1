@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos y Categorías - Book Store</title>
+    <link rel="stylesheet" href="css/listaProducto.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Book Store</h1>
+        </div>
+        <div class="account">
+            <button id="admin-btn">Administrador</button>
+            <button id="orders-btn">Ver Historial de Pedidos</button>
+        </div>        
+    </header>
+
+    <main>
+        <h1>Gestión de Productos y Categorías</h1>
+
+        <!-- Botones de acción -->
+        <div class="actions">
+            <button id="add-product-btn" class="action-btn">Agregar Producto</button>
+            <button id="manage-categories-btn">Gestionar Categorías</button>
+            <button id="manage-users-btn" class="action-btn">Gestionar Usuarios</button>
+        </div>
+
+        <!-- Formulario para agregar/editar un producto -->
+        <div id="add-product-form" class="hidden">
+            <h2 id="form-title">Agregar Producto</h2>
+            <form id="product-form">
+                <input type="hidden" id="product-id">
+                <div class="form-group">
+                    <label for="product-name">Nombre del Producto:</label>
+                    <input type="text" id="product-name" placeholder="Ingrese el nombre del producto" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Descripción:</label>
+                    <textarea id="product-description" placeholder="Ingrese la descripción" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Precio:</label>
+                    <input type="number" id="product-price" placeholder="Ingrese el precio" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-stock">Stock:</label>
+                    <input type="number" id="product-stock" placeholder="Ingrese la cantidad en stock" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Imagen:</label>
+                    <input type="file" id="product-image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="product-category">Categoría:</label>
+                    <select id="product-category" required>
+                        <!-- Las categorías serán cargadas dinámicamente -->
+                    </select>
+                </div>
+                <button type="submit" class="save-btn">Guardar</button>
+                <button type="button" class="cancel-btn">Cancelar</button>
+            </form>
+        </div>
+
+        <!-- Tabla de productos -->
+        <h2>Listado de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del Producto</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Productos se cargarán dinámicamente -->
+            </tbody>
+        </table>
+
+        <!-- Formulario para agregar/editar una categoría -->
+        <div id="manage-categories-form" class="hidden">
+            <h2 id="category-form-title">Agregar Categoría</h2>
+            <form id="category-form">
+                <input type="hidden" id="category-id">
+                <div class="form-group">
+                    <label for="category-name">Nombre de la Categoría:</label>
+                    <input type="text" id="category-name" placeholder="Ingrese el nombre de la categoría" required>
+                </div>
+                <div class="form-group">
+                    <label for="category-description">Descripción:</label>
+                    <textarea id="category-description" placeholder="Ingrese la descripción"></textarea>
+                </div>
+                <button type="submit" class="save-category-btn">Guardar</button>
+                <button type="button" class="cancel-category-btn">Cancelar</button>
+            </form>
+        </div>
+
+        <!-- Tabla de categorías -->
+        <div id="category-list-container" class="hidden">
+            <h2>Listado de Categorías</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="category-list">
+                    <!-- Las categorías se cargarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Book Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/listaProducto.js"></script>
+</body>
+</html>

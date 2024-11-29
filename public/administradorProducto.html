@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/administradorProducto.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" name="search" placeholder="Buscar artículo">
+        <a href="catalogoProducto.html" class="search-button">Buscar</a>
+    </div>
+
+    <div class="account">
+        <button>Acceder</button>
+        <div class="cart">
+            <img src="img/carrito.png" alt="Carrito">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="admin-container">
+        <h1 class="admin-title">ADMINISTRADOR</h1>
+        <form class="product-form">
+            <div class="form-group">
+                <label for="product-name">Nombre del producto:</label>
+                <input type="text" id="product-name" placeholder="Hábito Atómico">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción:</label>
+                <textarea id="description" placeholder="¿Te gustaría transformar tu vida con pequeños cambios...?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Precio:</label>
+                <input type="number" id="price" placeholder="100">
+            </div>
+            <div class="form-group">
+                <label for="image">Imagen:</label>
+                <input type="file" id="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoría:</label>
+                <select id="category">
+                    <option value="autoayuda">Autoayuda</option>
+                    <option value="ficcion">Ficción</option>
+                    <option value="educativo">Educativo</option>
+                </select>
+            </div>
+            <button type="submit" class="save-btn">Guardar</button>
+        </form>
+    </section>
+</main>
+
+

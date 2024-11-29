@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" name="search" placeholder="Buscar artículo">
+        <select name="category">
+            <option value="">Categorías</option>                
+        </select>
+        
+        <a href="catalogoProducto.html" class="search-button">Buscar</a>
+    </div>
+
+    <div class="account">
+        <div class="cart">
+            <img src="img/carrito.png" alt="Carrito">
+            <span class="cart-count">0</span> <!-- Contador dinámico -->
+        </div>
+        <button class="btn-logout" style="display: none;">Cerrar Sesión</button> <!-- Botón de cerrar sesión -->
+    </div>    
+</header>
+
+<section class="registro">
+    <div class="registro-content">
+        <h2>REGÍSTRATE YA!</h2>
+        <h3>BOOK</h3>
+        <p>REGÍSTRATE Y ENCUENTRA MUCHOS LIBROS PARA LEER DONDE QUIERAS Y CUANDO QUIERAS</p>
+        <button class="btn-login">Inicia Sesión</button>
+        <button class="btn-register">Regístrate</button>
+    </div>
+    
+    <div class="registro-image">
+        <img src="img/book.png" alt="Imagen de libro y lector digital">
+    </div>
+</section>
+
+<section class="carousel">
+    <h2>Explora nuestros libros</h2>
+    <div class="carousel-items">
+        <!-- Los productos del carrusel se cargarán dinámicamente aquí -->
+    </div>
+</section>
+
+<section class="featured-products">
+    <h2>Productos Destacados:</h2>
+    <div class="product-grid">
+        <!-- Los productos destacados se cargarán aquí dinámicamente -->
+    </div>
+</section>
+
+<section class="testimonials">
+   <h2>¿Qué dicen nuestros clientes?</h2>
+   <div class="testimonial-grid">
+       <div class="testimonial">
+           <p>"Libros increíbles, envíos rápidos!"</p>
+           <p>María Gómez</p>
+           <img src="img/testimonio1.png" alt="Foto de María Gómez">
+       </div>
+       <div class="testimonial">
+           <p>"Mi librería online favorita!"</p>
+           <p>Ana López</p>
+           <img src="img/testimonio2.png" alt="Foto de Ana López">
+       </div>
+       <div class="testimonial">
+           <p>"¡Descubrí joyas literarias!"</p>
+           <p>Juan Pérez</p>
+           <img src="img/testimonio3.png" alt="Foto de Juan Pérez">
+       </div>
+   </div>
+</section>
+
+<section class="faq">
+   <h2>Preguntas Frecuentes</h2>
+   
+   <details class="faq-item">
+       <summary>Forma de pago</summary>
+       <p>Puedes pagar con tarjeta de crédito, débito, o a través de PayPal.</p>
+   </details>
+   
+   <details class="faq-item">
+       <summary>Crear una cuenta</summary>
+       <p>Para crear una cuenta, haz clic en "Acceder" y luego selecciona "Regístrate".</p>
+   </details>
+   
+   <details class="faq-item">
+       <summary>Cómo hacer una compra</summary>
+       <p>Selecciona los productos, añádelos al carrito y finaliza la compra con tus datos de envío.</p>
+   </details>
+</section>
+
+<footer>
+    <p>© 2024 Book Store. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="js/categories.js"></script>
+<script src="js/cart.js"></script> 
+<script src="js/featured-products.js"></script>
+<script type="module" src="js/carousel.js"></script>
+<script src="js/index.js"></script>
+<script type="module" src="js/session.js"></script>
+</body>
+</html>

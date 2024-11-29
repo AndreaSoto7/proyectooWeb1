@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/historialPedido.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book</h1>
+    </div>
+
+    <div class="account">
+        <button id="admin-btn">Administrador</button>
+    </div>
+</header>
+
+    <main>
+        <h1>Historial de Pedidos</h1>
+        <div class="order-history">
+            <div class="order">
+                <h2>Pedido #001</h2>
+                <p>Fecha: 20 de noviembre de 2024</p>
+                <p>Total: $50.00</p>
+                <a href="#" class="detail-link" onclick="toggleDetails(1)">Ver Detalle</a>
+                <table id="details-1" class="order-details" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio U.</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Habitos Atomicoss</td>
+                            <td>2</td>
+                            <td>$100.00</td>
+                            <td>$200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="order">
+                <h2>Pedido #002</h2>
+                <p>Fecha: 21 de noviembre de 2024</p>
+                <p>Total: $80.00</p>
+                <a href="#" class="detail-link" onclick="toggleDetails(2)">Ver Detalle</a>
+                <table id="details-2" class="order-details" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio U.</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The academy</td>
+                            <td>1</td>
+                            <td>$120.00</td>
+                            <td>$120.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/historialPedido.js"></script>
+</body>
+</html>

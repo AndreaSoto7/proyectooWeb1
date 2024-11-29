@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="css/registroPedido.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo">
+        <h1>Book Store</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" name="search" placeholder="Buscar artículo">
+        <select name="category">            
+            <option value="">Categorías</option>                
+        </select>
+        <a href="catalogoProducto.html" class="search-button">Buscar</a>
+    </div>
+
+    <div class="account">
+        <div class="cart">
+            <img src="img/carrito.png" alt="Carrito">
+        </div>
+    </div>
+</header>
+
+<main>
+    <h1>Finalizar compra</h1>
+    <div class="checkout-container">
+        <div class="form-section">
+            <form id="orderForm">
+                <label for="pais">País o región</label>
+                <input type="text" id="pais" name="pais" value="Bolivia" readonly>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Nombre de la Calle" required>
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+            </form>
+        </div>
+        <div class="order-summary">
+            <h2>Confirmación del Pedido</h2>
+            <p>Productos:</p>
+            <ul id="product-list"></ul>
+            <p>Envío: <span id="shipping-cost">0.00 Bs</span></p>
+            <hr>
+            <p class="total">Total del pedido: <span id="total-price">0.00 Bs</span></p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="registrarPedidoBtn" type="button" disabled>Registrar Pedido</button>
+    </div>
+</main>
+<script src="js/registroPedido.js"></script>
+</body>
+</html>
